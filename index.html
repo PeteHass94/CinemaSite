@@ -8,25 +8,26 @@
   <!-- link and script Bootstrap libraries -->
   <link href="./bootstrap-4.3.1-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
 
-  <!-- add individual css and js files -->
+  <!-- add individual css -->
   <link href="./css/cinema.css" type="text/css" rel="stylesheet">
+
 
 </head>
   <body>
     <header>
       <div class="jumbotron">
         <h1 class="display-4">PPR Cinema's</h1>
-        <p class="lead">Catch the latest Shows in our at Cinema</p>
+        <h2 class="lead">Catch the latest Shows in our at Cinema</h2>
         <hr class="my-4">
         <p>Find out your next movie option now</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Film times</a>
+        <a class="btn btn-success btn-lg" href="#" role="button">Film times</a>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Cinema Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Cinema Menu</a>
+    <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -39,7 +40,7 @@
             <a class="nav-link" href="#">Buy Tickets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Food and  Drink</a>
+            <a class="nav-link" href="#">Food and Drink</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">FAQs</a>
@@ -54,15 +55,102 @@
               <a class="dropdown-item" href="#">Contact Us</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
         </ul>
       </div>
     </nav>
     <main>
       <div class="CurrentTime">
+        <p>Current Local Date and  Time: <span id="date_time">Current Date and Time:</span> </p>
+      </div>
+      <div class="movies">
+        <div class="row movieCards">
 
+          <div class="col-sm">
+            <div class="card" style="width: 19rem;">
+              <img src="./media/the-lion-king.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Lion King</h5>
+                <p class="card-text">After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Click a time, book a ticket</li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-outline-primary">12:00</button>
+                  <button type="button" class="btn btn-outline-primary">13:30</button>
+                </li>
+                <li class="list-group-item">Rated: PG</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">IMDB link</a>
+                <a href="#" class="card-link">Trailer link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 19rem;">
+              <img src="./media/spiderman.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Spider-man: Far from Home</h5>
+                <p class="card-text">Peter Parker and his friends go on a European vacation, where Peter finds himself agreeing to help Nick Fury uncover the mystery of several elemental creature attacks, creating havoc across the continent.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Click a time, book a ticket</li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-outline-primary">12:30</button>
+                  <button type="button" class="btn btn-outline-primary">14:00</button>
+                </li>
+                <li class="list-group-item">Rated: 12A</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">IMDB link</a>
+                <a href="#" class="card-link">Trailer link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 19rem;">
+              <img src="./media/toy-story.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Toy Story 4</h5>
+                <p class="card-text">When a new toy called "Forky" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Click a time, book a ticket</li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-outline-primary">14:00</button>
+                  <button type="button" class="btn btn-outline-primary">16:30</button>
+                </li>
+                <li class="list-group-item">Rated: U</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">IMDB link</a>
+                <a href="#" class="card-link">Trailer link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 19rem;">
+              <img src="./media/yesterday.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yesterday</h5>
+                <p class="card-text">A struggling musician realizes he's the only person on Earth who can remember The Beatles after waking up in an alternate timeline where they never existed.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Click a time, book a ticket</li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-outline-primary">11:00</button>
+                  <button type="button" class="btn btn-outline-primary">15:30</button>
+                </li>
+                <li class="list-group-item">Rated: 12A</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">IMDB link</a>
+                <a href="#" class="card-link">Trailer link</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </main>
@@ -71,6 +159,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <!-- individual js -->
+    <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript">window.onload = date_time('date_time');</script>
   </body>
 
 </html>
