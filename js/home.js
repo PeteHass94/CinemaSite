@@ -1,4 +1,4 @@
-function date_time(CurrentDay, CurrentHour)
+function date_time()
 {
         var day_hour = [];
         date = new Date;
@@ -8,7 +8,6 @@ function date_time(CurrentDay, CurrentHour)
         d = date.getDate();
         day = date.getDay();
         days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-        h = date.getHours();
         var superscript=" ";
         if(d>3 && d<21) { superscript="th";}
         switch (d % 10) {
@@ -21,6 +20,7 @@ function date_time(CurrentDay, CurrentHour)
             default: superscript="th";
         }
         d= d+superscript;
+        h = date.getHours();
         if(h<10)
         {
                 h = "0"+h;
@@ -39,6 +39,26 @@ function date_time(CurrentDay, CurrentHour)
         day_hour.push(days[day]);
         day_hour.push(h);
         document.getElementById('date_time').innerHTML = result;
-        setTimeout('date_time("'+CurrentDay+','+CurrentHour+'");','1000');
+        setTimeout('date_time();','1000');
         return day_hour;
+}
+
+
+function filmAvailabilty()
+{
+    var currentTime = [];
+    date = new Date;
+    currentHour = date.getHours();
+    currentMinute = date.getMinutes();
+
+    var filmTime = document.getElementById('FilmTime').innerHTML;
+    var filmHour= filmTime.subString(0,1);
+    var filmMinute = filmTime.subString(3,4);
+
+    if (currentHour < filmHour &&  currentMinute < filmMinute)
+    document.getElementById('FilmTime').classList.add('btn-outline-success');
+    else
+    document.getElementById('FilmTime').addClass('btn-outline-danger');
+    setTimeout('filmAvailabilty();','1000');
+    return filmAvailabilty;
 }
