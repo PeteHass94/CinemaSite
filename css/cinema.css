@@ -25,7 +25,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: #C6D1D6;
-  color: #000000;
+  color: #00003F;
   background-image: url("../media/cinema_seats.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -128,4 +128,38 @@ main {
 }
 .card {
   margin: 1em auto;
+}
+
+.summary {
+  display: flex;
+  background-image: url("../media/popcorn.jpg");
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  margin: 2em;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #00003F;
+  background-size: 100% auto;
+}
+
+.summary .btn-primary,
+.summary .btn-primary:hover,
+.summary .btn-primary:active,
+.summary .btn-primary:visited {
+    background-color: #BBA461 !important;
+    border-color: #BBA461;
+    width: 50%;
+
+}
+
+footer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #00B5E2;
 }
