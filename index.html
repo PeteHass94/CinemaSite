@@ -16,11 +16,51 @@
   <body>
     <header>
       <div class="jumbotron">
-        <h1 class="display-4">PPR Cinema's</h1>
-        <h2 class="lead">Catch the latest Shows in our at Cinema</h2>
-        <hr class="my-4">
-        <p>Find out your next movie option now</p>
-        <a class="btn btn-success btn-lg" href="#" role="button">Film times</a>
+        <div class="left">
+          <h1 class="display-4">
+            <img src="./media/PPRCinemaLogo.png" alt="">
+          </h1>
+          <h2 class="lead">Catch the latest Shows in our at Cinema</h2>
+          <hr class="my-4">
+          <p>Find out your next movie option now</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Film times</a>
+        </div>
+        <div class="right">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video class="d-block w-100 video-fluid" autoplay loop muted>
+                  <source src="./media/toy-story-tease.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video class="d-block w-100 video-fluid" autoplay loop muted>
+                  <source src="./media/ouatih-tease.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video class="d-block w-100 video-fluid" autoplay loop muted>
+                  <source src="./media/avengers-tease.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="carousel-item">
+                <video class="d-block w-100 video-fluid" autoplay loop muted>
+                  <source src="./media/yesterday-tease.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+
       </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -60,7 +100,7 @@
     </nav>
     <main>
       <div class="CurrentTime">
-        <p>Current Local Date and  Time: <span id="date_time">Current Date and Time:</span> </p>
+        <p>Current Local Time: <span id="date_time">Current Time:</span>Pick a time that suits!</p>
       </div>
       <div class="movies">
         <div class="row movieCards">
@@ -75,13 +115,13 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Click a time, book a ticket</li>
                 <li class="list-group-item">
-                  <button type="button" class="btn btn-outline-primary">12:00</button>
-                  <button type="button" class="btn btn-outline-primary">13:30</button>
+                  <button type="button" class="btn btn-outline-success">12:00</button>
+                  <button type="button" class="btn btn-outline-success">13:30</button>
                 </li>
                 <li class="list-group-item">Rated: PG</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">IMDB link</a>
+                <a href="https://www.imdb.com/title/tt6105098/?ref_=nv_sr_3?ref_=nv_sr_3" class="card-link">IMDB link</a>
                 <a href="#" class="card-link">Trailer link</a>
               </div>
             </div>
@@ -96,13 +136,13 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Click a time, book a ticket</li>
                 <li class="list-group-item">
-                  <button type="button" class="btn" id="FilmTime">12:30</button>
-                  <button type="button" class="btn btn-outline-primary">14:00</button>
+                  <button type="button" class="btn btn-outline-success">12:30</button>
+                  <button type="button" class="btn btn-outline-success">14:00</button>
                 </li>
                 <li class="list-group-item">Rated: 12A</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">IMDB link</a>
+                <a href="https://www.imdb.com/title/tt6320628/?ref_=nv_sr_1?ref_=nv_sr_1" class="card-link">IMDB link</a>
                 <a href="#" class="card-link">Trailer link</a>
               </div>
             </div>
@@ -117,13 +157,13 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Click a time, book a ticket</li>
                 <li class="list-group-item">
-                  <button type="button" class="btn btn-outline-primary">14:00</button>
-                  <button type="button" class="btn btn-outline-primary">16:30</button>
+                  <button type="button" class="btn btn-outline-success">14:00</button>
+                  <button type="button" class="btn btn-outline-success">16:30</button>
                 </li>
                 <li class="list-group-item">Rated: U</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">IMDB link</a>
+                <a href="https://www.imdb.com/title/tt1979376/?ref_=nv_sr_1?ref_=nv_sr_1" class="card-link">IMDB link</a>
                 <a href="#" class="card-link">Trailer link</a>
               </div>
             </div>
@@ -138,13 +178,55 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Click a time, book a ticket</li>
                 <li class="list-group-item">
-                  <button type="button" class="btn btn-outline-primary">11:00</button>
-                  <button type="button" class="btn btn-outline-primary">15:30</button>
+                  <button type="button" class="btn btn-outline-success">11:00</button>
+                  <button type="button" class="btn btn-outline-success">15:30</button>
                 </li>
                 <li class="list-group-item">Rated: 12A</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">IMDB link</a>
+                <a href="https://www.imdb.com/title/tt8079248/?ref_=nv_sr_1?ref_=nv_sr_1" class="card-link">IMDB link</a>
+                <a href="#" class="card-link">Trailer link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 19rem;">
+              <img src="./media/avengers.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Avengers: Engame</h5>
+                <p class="card-text">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Click a time, book a ticket</li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-outline-success">11:00</button>
+                  <button type="button" class="btn btn-outline-success">15:30</button>
+                </li>
+                <li class="list-group-item">Rated: 12A</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_3?ref_=nv_sr_3" class="card-link">IMDB link</a>
+                <a href="#" class="card-link">Trailer link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 19rem;">
+              <img src="./media/ouatih.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Once Upon a Time in Hollywood</h5>
+                <p class="card-text">A faded television actor and his stunt double strive to achieve fame and success in the film industry during the final years of Hollywood's Golden Age in 1969 Los Angeles.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Click a time, book a ticket</li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-outline-success">11:00</button>
+                  <button type="button" class="btn btn-outline-success">15:30</button>
+                </li>
+                <li class="list-group-item">Rated: 18</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://www.imdb.com/title/tt7131622/" class="card-link">IMDB link</a>
                 <a href="#" class="card-link">Trailer link</a>
               </div>
             </div>
@@ -161,6 +243,7 @@
     <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
     <!-- individual js -->
     <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/jquerycustom.js"></script>
     <script type="text/javascript">window.onload = date_time('date_time');</script>
   </body>
 

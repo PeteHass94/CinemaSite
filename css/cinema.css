@@ -26,6 +26,10 @@ body {
   flex-direction: column;
   background-color: #C6D1D6;
   color: #000000;
+  background-image: url("../media/cinema_seats.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 header {
   width: 100%;
@@ -37,12 +41,40 @@ header {
   margin: 1em auto;
   width: 80%;
   background-color: #00B5E2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 
 .jumbotron h1, .jumbotron h3, .jumbotron p {
   color: #00003F;
 }
+.jumbotron img {
+  width: 90%;
+}
+.jumbotron div {
+  width: 100%;
+  flex-direction: row;
+}
+.jumbotron .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BBA461;
+  height: 100%;
+  width: 100%;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 6em;
+  width: 25em;
+  height: 8em;
+  background-color: #BBA461;
+}
+
 
 nav {
   background-color: #FFFFFF;
@@ -64,6 +96,7 @@ nav div {
 main {
   background-color: #FFFFFF;
   width: 80%;
+
 }
 .CurrentTime {
   display: flex;
@@ -71,10 +104,10 @@ main {
   background-color: #00B5E2;
 }
 .CurrentTime p {
-  margin: 1em auto;
-  padding: 0.75em;
+  margin: 1em auto 0 auto;
+  padding: 1em;
   background-color: #FFFFFF;
-  border: 2px solid #00B5E2;
+  border-bottom: 2px solid #BBA461;
 }
 .CurrentTime span {
   color: #BBA461;

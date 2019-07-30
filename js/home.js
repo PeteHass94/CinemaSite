@@ -1,7 +1,10 @@
+
 function date_time()
 {
         var day_hour = [];
         date = new Date;
+
+        /*
         year = date.getFullYear();
         month = date.getMonth();
         months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
@@ -20,6 +23,7 @@ function date_time()
             default: superscript="th";
         }
         d= d+superscript;
+        */
         h = date.getHours();
         if(h<10)
         {
@@ -35,16 +39,39 @@ function date_time()
         {
                 s = "0"+s;
         }
-        result = days[day]+' '+months[month]+' '+d+' '+year+', '+h+':'+m+':'+s;
-        day_hour.push(days[day]);
+        //result = days[day]+' '+months[month]+' '+d+' '+year+', '+h+':'+m+':'+s;
+        result = h+':'+m+':'+s+'. ';
+
+        //day_hour.push(days[day]);
         day_hour.push(h);
         document.getElementById('date_time').innerHTML = result;
+
+/*
+        var filmTime = document.getElementById("FilmTime").innerHTML.toString();
+        filmHour= filmTime.substring(0, 2);
+        filmMinute = filmTime.substring(3,5);
+
+        if (h < filmHour)
+        {
+        document.getElementById("FilmTime").classList.add('btn-outline-success');
+        }
+        else if (h == filmHour && m < filmMinute)
+        {
+        document.getElementById("FilmTime").classList.add('btn-outline-success');
+        }
+        else
+        {
+        document.getElementById("FilmTime").classList.add('btn-outline-danger');
+        }
+*/
+
+
         setTimeout('date_time();','1000');
         return day_hour;
 }
 
-
-function filmAvailabilty()
+/*
+function darkColor()
 {
     var currentTime = [];
     date = new Date;
@@ -62,3 +89,4 @@ function filmAvailabilty()
     setTimeout('filmAvailabilty();','1000');
     return filmAvailabilty;
 }
+*/
