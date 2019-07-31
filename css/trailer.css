@@ -1,0 +1,13 @@
+
+
+.trailers {
+  display: flex;
+  flex-direction: column;
+}
+.trailers nav {
+  margin: auto;
+}
+
+.dropdown-menu {
+width: 18em;
+}
