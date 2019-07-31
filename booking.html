@@ -10,7 +10,7 @@
 
   <!-- add individual css -->
   <link href="./css/cinema.css" type="text/css" rel="stylesheet">
-  <link href="./css/trailer.css" type="text/css" rel="stylesheet">
+  <link href="./css/peterBruce.css" type="text/css" rel="stylesheet">
 
 
 </head>
@@ -106,6 +106,51 @@
       <div class="CurrentTime">
         <p>Current Local Time: <span id="date_time">Current Time:</span>Pick a time that suits!</p>
       </div>
+      <div class="">
+        <center>
+			<h1>Booking Form</h1>
+			<label>Select Film</label>
+		<select id="selectedFilm">
+			<option value="theLionKing">The Lion King</option>
+			<option value="film2">FILM 2</option>
+			<option value="film3">FILM 3</option>
+			<option value="film4">FILM 4</option>
+		</select>
+
+<br><br>
+
+			<label>Select Date</label>
+		<select>
+			<option value="date1">10/8/19</option>
+			<option value="date2">11/8/19</option>
+			<option value="date3">12/8/19</option>
+			<option value="date4">13/8/19</option>
+		</select>
+
+<br><br>
+
+			<label>Select Time</label>
+		<select>
+			<option value="time1">10:30AM</option>
+			<option value="time2">1:00PM</option>
+			<option value="time3">4:00PM</option>
+			<option value="time4">8:30PM</option>
+		</select>
+
+<br><br>
+
+			<form>
+			<label>Number Of Tickets</label>
+			<input type="number" name="notickets" value="notickets"><br>
+			</form>
+
+<br>
+
+			<input type="submit" value="BOOK & PAY">
+
+
+		</center>
+      </div>
 
     </main>
     <footer>
@@ -129,7 +174,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
     <!-- individual js -->
-    <script type="text/javascript" src="./js/home.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/jquerycustom.js"></script>
     <script type="text/javascript">window.onload = date_time('date_time');</script>
   </body>
