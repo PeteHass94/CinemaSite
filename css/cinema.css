@@ -114,7 +114,33 @@ main {
   font-weight: bold;
 }
 
+.summary {
+  display: flex;
+  background-image: url("../media/popcorn.jpg");
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  margin: 2em;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #00003F;
+  background-size: 100% auto;
+}
 
+.summary .btn-primary,
+.summary .btn-primary:hover,
+.summary .btn-primary:active,
+.summary .btn-primary:visited {
+    background-color: #BBA461 !important;
+    border-color: #BBA461;
+    width: 50%;
+
+}
+a.trailerButton {
+  width: 25em;
+}
 
 footer {
   width: 80%;

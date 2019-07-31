@@ -6,13 +6,48 @@
 }
 .trailers nav {
   margin: auto;
+  justify-content: center;
 }
 
+
+
 .dropdown-menu {
-width: 18em;
+  width: 18em;
+  right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.movie .title {
+  text-decoration: underline;
 }
 
 .movieDetail{
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.movieDetail div{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 50%;
+  align-content: center;
+}
+.theTrailer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
