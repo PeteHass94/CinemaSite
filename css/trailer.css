@@ -11,3 +11,8 @@
 .dropdown-menu {
 width: 18em;
 }
+
+.movieDetail{
+  display: flex;
+  flex-direction: row;
+}
