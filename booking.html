@@ -108,7 +108,7 @@
       </div>
       <div class="container-fluid">
     			<h1>Booking Form</h1>
-          <p id=userMessage>Autofill will complete your order  with the movie and time you selected earlier</p>
+          <p>Autofill will complete your order  with the movie and time you selected earlier</p>
           <button type="button" class="btn btn-success" onClick="autoFill()" id="autofillButton">Autofill</button>
 
         <form>
@@ -132,7 +132,7 @@
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1"><h4>Then select Film Time</h4></label>
-            <select class="form-control" name="filmTimes" id="theFilmTimes"placeholder="Select Time">
+            <select class="form-control" name="filmTimes" id="theFilmTimes" placeholder="Select Time">
               <option value="instruct'">Select Movie</option>
               <option value="theLionKing">12:00</option>
               <option value="theLionKing">13:30</option>
@@ -148,6 +148,9 @@
               <option value="ouatih">17:00</option>
               <option value="ouatih">19:30</option>
             </select>
+            <small id="timeCheck" class="form-text text-muted">
+              Careful don't pick a time already passed
+            </small>
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1"><h4>Finally select Number of Tickets <span>£5 Each</span></h4></label>
@@ -170,7 +173,8 @@
           <div class="form-group">
             <label for="exampleFormControlSelect1"><h4>Subtotal: <span id="subTotal">£0</span></h4></label>
           </div>
-          <button type="button" class="btn btn-success" onClick=submitOrder();>Proceed to Payment</button>
+          <button id="proceedBtn" type="button" class="btn btn-success" onClick=submitOrder();>Proceed to Payment</button>
+          <p id=userMessage>Should all be ok you will continue</p>
         </form>
 
       </div>

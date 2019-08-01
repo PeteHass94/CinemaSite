@@ -1,0 +1,11 @@
+.summarylist a{
+  cursor: default;
+
+}
+#payments {
+  display: none;
+}
+
+button {
+  margin: 1em;
+}

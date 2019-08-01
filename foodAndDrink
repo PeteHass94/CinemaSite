@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>PPR Cinemas Order Summary</title>
+  <title>Peter Hassard's Learning Log</title>
   <!-- reset to default css standards -->
   <link href="./css/reset.css" type="text/css" rel="stylesheet">
   <!-- link and script Bootstrap libraries -->
@@ -10,7 +10,7 @@
 
   <!-- add individual css -->
   <link href="./css/cinema.css" type="text/css" rel="stylesheet">
-  <link href="./css/order.css" type="text/css" rel="stylesheet">
+  <link href="./css/trailer.css" type="text/css" rel="stylesheet">
 
 
 </head>
@@ -104,96 +104,9 @@
     </nav>
     <main>
       <div class="CurrentTime">
-        <p>Current Local Time: <span id="date_time">Current Time:</span></p>
+        <p>Current Local Time: <span id="date_time">Current Time:</span>Pick a time that suits!</p>
       </div>
-      <div class="container-fluid" id="ticket">
-        <h1>Order Summary</h1>
-        <p>Summary of your transaction</p>
-        <div class="summarylist list-group">
-          <span href="#" class="list-group-item list-group-item-action active">
-            <h3>Ticket Date:</h3>
-            <span id="orderDate"></span>
-          </span>
-          <span href="#" class="list-group-item list-group-item-success">
-            <h3>Movie Name:</h3>
-            <span id="orderName"></span>
-          </span>
-          <span href="#" class="list-group-item list-group-item-success">
-            <h3>Movie Time:</h3>
-            <span id="orderTime"></span>
-          </span>
-          <span href="#" class="list-group-item list-group-item-success">
-            <h2>Number of Ticket(s) x
-              <span id="orderTickets"></span>
-            </h2>
-          </span>
-          <span href="#" class="list-group-item list-group-item-danger">
-            <h2>Total Price x
-              <span id="orderTotal"></span>
-            </h2>
-          </span>
-        </div>
 
-        <div class="container">
-          <button type="button" class="btn btn-danger" onClick="">Return to Booking Form</button>
-          <button type="button" class="btn btn-success" onClick="proceedPayment()">Proceed to Payment</button>
-        </div>
-        <!--sourced https://getbootstrap.com/docs/4.0/examples/checkout/ -->
-        <div class="container-fluid" id="payments">
-          <h4>Payment</h4>
-            <form class="needs-validation" action="index.html" method="post" novalidate>
-              <div class="d-block my-3">
-                <div class="custom-control custom-radio">
-                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                  <label class="custom-control-label" for="credit">Credit card</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="debit">Debit card</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="paypal">Paypal</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="cc-name">Name on card</label>
-                  <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                  <small class="text-muted">Full name as displayed on card</small>
-                  <div class="invalid-feedback">
-                    Name on card is required
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="cc-number">Credit card number</label>
-                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Credit card number is required
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3 mb-3">
-                  <label for="cc-expiration">Expiration</label>
-                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Expiration date required
-                  </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                  <label for="cc-expiration">CVV</label>
-                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Security code required
-                  </div>
-                </div>
-              </div>
-              <hr class="mb-4">
-            </form>
-          <button class="btn btn-primary" onClick="printTicket(ticket)">Print Tickets</button>
-        </div>
-      </div>
     </main>
     <footer>
       <div class="container">
@@ -218,10 +131,7 @@
     <!-- individual js -->
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/jquerycustom.js"></script>
-    <script type="text/javascript">
-      window.onload = date_time('date_time');
-      window.onload = displayOrder();
-    </script>
+    <script type="text/javascript">window.onload = date_time('date_time');</script>
   </body>
 
 </html>

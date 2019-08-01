@@ -65,3 +65,6 @@ label:hover{
 input:checked ~ .tab-content{
 	max-height: 30em;
 }
+main {
+  padding: 1em;
+}
