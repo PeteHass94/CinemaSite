@@ -1,9 +1,11 @@
 /* made by Peter Bruce */
 
 body {
-  background: white;
   color: #555555;
-  font-family: Arial;
+  background-image: url("../media/cinema_seats_full.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .tab-section{
@@ -26,17 +28,18 @@ input{
 }
 
 label {
-	background: red;
+	background: #00B5E2;
 	border: 1px solid #fff;
-	cursor: pointer;
-	display: block;
+  border-radius: 2%;
+	display: flex;
 	font-size: 18px;
 	line-height: 2;
-	padding: 0 0 0 1em;
+	padding: 0.5em;
 	position: relative;
 	transition: all 0.3s ease 0s;
 	color: #fff;
-	font-family:Audiowide;
+  margin-top: 0.5em;
+
 }
 
 label:hover{

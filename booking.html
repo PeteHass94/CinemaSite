@@ -21,7 +21,7 @@
           <h1 class="display-4">
             <img src="./media/PPRCinemaLogo.png" alt="">
           </h1>
-          <h2 class="lead">Catch the latest Shows in our at Cinema</h2>
+          <h2 class="lead">Catch the latest Shows in our Cinema</h2>
           <hr class="my-4">
           <p>Find out your next movie option now</p>
           <a class="btn btn-success btn-lg" href="#" role="button">Film times</a>
@@ -77,11 +77,11 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="template.html">Trailers <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Buy Tickets</a>
+            <a class="nav-link" href="trailers.html">Trailers</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Buy Tickets <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Food and Drink</a>
@@ -106,50 +106,73 @@
       <div class="CurrentTime">
         <p>Current Local Time: <span id="date_time">Current Time:</span>Pick a time that suits!</p>
       </div>
-      <div class="">
-        <center>
-			<h1>Booking Form</h1>
-			<label>Select Film</label>
-		<select id="selectedFilm">
-			<option value="theLionKing">The Lion King</option>
-			<option value="film2">FILM 2</option>
-			<option value="film3">FILM 3</option>
-			<option value="film4">FILM 4</option>
-		</select>
+      <div class="container-fluid">
+    			<h1>Booking Form</h1>
+          <p id=userMessage>Autofill will complete your order  with the movie and time you selected earlier</p>
+          <button type="button" class="btn btn-success" onClick="autoFill()" id="autofillButton">Autofill</button>
 
-<br><br>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>First select Film Date</h4></label>
+            <select class="form-control" name="filmDate" id="theFilmDate"placeholder="Select Time">
+              <option value="instruct'">Select Date</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Now select your movie</h4></label>
+            <select class="form-control" name="filmNames" id="theFilmNames">
+              <option value="instruct">Select Movie</option>
+              <option value="theLionKing">The Lion King</option>
+              <option value="spiderman">Spider-man: Far from Home</option>
+              <option value="toyStory4">Toy Story 4</option>
+              <option value="yesterday">Yesterday</option>
+              <option value="avengers">Avengers: Endgame</option>
+              <option value="ouatih">Once upon a time in Hollywood</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Then select Film Time</h4></label>
+            <select class="form-control" name="filmTimes" id="theFilmTimes"placeholder="Select Time">
+              <option value="instruct'">Select Movie</option>
+              <option value="theLionKing">12:00</option>
+              <option value="theLionKing">13:30</option>
+              <option value="theLionKing">15:30</option>
+              <option value="spiderman">12:30</option>
+              <option value="spiderman">14:00</option>
+              <option value="toyStory4">14:00</option>
+              <option value="toyStory4">16:30</option>
+              <option value="yesterday">11:00</option>
+              <option value="yesterday">15:30</option>
+              <option value="avengers">14:30</option>
+              <option value="avengers">17:30</option>
+              <option value="ouatih">17:00</option>
+              <option value="ouatih">19:30</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Finally select Number of Tickets <span>£5 Each</span></h4></label>
+            <select class="form-control" name="ticketOrder" id="theTicketOrder"placeholder="Select Time">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+            <small id="passwordHelpBlock" class="form-text text-muted">
+              Maximum 10 tickets per transaction
+            </small>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1"><h4>Subtotal: <span id="subTotal">£0</span></h4></label>
+          </div>
+          <button type="button" class="btn btn-success" onClick=submitOrder();>Proceed to Payment</button>
+        </form>
 
-			<label>Select Date</label>
-		<select>
-			<option value="date1">10/8/19</option>
-			<option value="date2">11/8/19</option>
-			<option value="date3">12/8/19</option>
-			<option value="date4">13/8/19</option>
-		</select>
-
-<br><br>
-
-			<label>Select Time</label>
-		<select>
-			<option value="time1">10:30AM</option>
-			<option value="time2">1:00PM</option>
-			<option value="time3">4:00PM</option>
-			<option value="time4">8:30PM</option>
-		</select>
-
-<br><br>
-
-			<form>
-			<label>Number Of Tickets</label>
-			<input type="number" name="notickets" value="notickets"><br>
-			</form>
-
-<br>
-
-			<input type="submit" value="BOOK & PAY">
-
-
-		</center>
       </div>
 
     </main>
@@ -176,7 +199,13 @@
     <!-- individual js -->
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/jquerycustom.js"></script>
-    <script type="text/javascript">window.onload = date_time('date_time');</script>
+    <script type="text/javascript">
+      window.onload = date_time('date_time');
+      window.onload = addDates();
+      window.onload = autoFill();
+      window.onload = calculateTotal();
+    </script>
+
   </body>
 
 </html>
