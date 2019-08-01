@@ -8,12 +8,6 @@ body {
   background-position: center;
 }
 
-.tab-section{
-	margin: 40px auto;
-	padding: 0 lem;
-	width: 65%;
-	float: right;
-}
 
 .tab-area{
 	position: relative;
@@ -57,8 +51,11 @@ label:hover{
 	transition: max-height .35s;
 	font-size: 15px;
 	color: #262626;
-	font-family:poppins;
 	line-height: 30px;
+
+}
+.tab-content p{
+
 
 }
 

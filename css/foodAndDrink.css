@@ -1,0 +1,41 @@
+body {
+  background-image: url(../media/popcornBigBowl.jpg);
+  background-size: cover;
+}
+.menu {
+  max-height: 100vh;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.fad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+.fad .left, .fad .right {
+  width: 50%;
+  padding: 0 4em 1em 4em;
+}
+.left {
+  margin-left: 5em;
+}
+.carousel {
+  display: flex;
+  height: 50%;
+  flex-shrink: 2
+}
+.carousel img {
+  display: flex;
+  height: 25em;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 2em;
+}

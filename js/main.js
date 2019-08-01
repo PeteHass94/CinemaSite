@@ -120,11 +120,6 @@ function checkTheTime() {
 
   var ticketTime = document.getElementById("theFilmTimes");
   var selectedTime = ticketTime.options[ticketTime.selectedIndex].text.toString();
-  console.log(selectedTime);
-  console.log(selectedTime.substring(0, 2));
-  console.log(selectedTime.substring(3, 5));
-  console.log(h);
-  console.log(m);
 
   if (selectedTime.length > 4) {
     filmHour= selectedTime.substring(0, 2);
@@ -169,10 +164,15 @@ if (typeof(Storage) !== "undefined") {
   sessionStorage.setItem("orderTotal", orderedTotal);
 
   var timeCheck = checkTheTime();
-  console.log(timeCheck);
+  dateIndex = document.getElementById("theFilmDate").selectedIndex;
 
-  if (orderedDate === "Sunday closed")
+  if (dateIndex == 0)
+    document.getElementById("userMessage").innerHTML = "Sorry, please select the date";
+  else if (orderedDate === "Sunday closed")
     document.getElementById("userMessage").innerHTML = "Sorry, we are not open on sundays please change the date";
+  else if (dateIndex > 1) {
+    window.location.href = "order.html";
+  }
   else if (timeCheck == 0)
     document.getElementById("userMessage").innerHTML = "Sorry, time is invalid";
   else

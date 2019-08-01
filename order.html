@@ -77,11 +77,11 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="template.html">Trailers <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Buy Tickets</a>
+            <a class="nav-link" href="trailers.html">Trailers <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Buy Tickets <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Food and Drink</a>
@@ -110,7 +110,7 @@
         <h1>Order Summary</h1>
         <p>Summary of your transaction</p>
         <div class="summarylist list-group">
-          <span href="#" class="list-group-item list-group-item-action active">
+          <span href="#" class="list-group-item list-group-item-primary">
             <h3>Ticket Date:</h3>
             <span id="orderDate"></span>
           </span>
@@ -135,7 +135,7 @@
         </div>
 
         <div class="container">
-          <button type="button" class="btn btn-danger" onClick="">Return to Booking Form</button>
+          <button type="button" class="btn btn-danger" onClick="window.location.href='booking.html'">Return to Booking Form</button>
           <button type="button" class="btn btn-success" onClick="proceedPayment()">Proceed to Payment</button>
         </div>
         <!--sourced https://getbootstrap.com/docs/4.0/examples/checkout/ -->
