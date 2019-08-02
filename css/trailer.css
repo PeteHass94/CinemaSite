@@ -26,7 +26,8 @@
 
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
+  padding: 1em auto 1em auto
 }
 .movie .title {
   text-decoration: underline;
