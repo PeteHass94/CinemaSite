@@ -23,11 +23,9 @@
 .movie {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
-  padding: 1em auto 1em auto
+  margin-bottom: 10em;
 }
 .movie .title {
   text-decoration: underline;
