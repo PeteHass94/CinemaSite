@@ -1,0 +1,198 @@
+/*
+white: #ffffff
+black: #000000
+RED HEX COLOR: #EC0C1C;
+                rgb(236,12,28);
+DARK RED HEX COLOR: #D80919;
+                    rgb(216,9,25);
+BLUE HEX COLOR: #063672;
+GOLD HEX COLOR: #9B814E;
+
+font-family: 'Raleway', Helvetica, sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'PT Serif', Georgia, serif;
+font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+*/
+.belowTitle {
+  background: linear-gradient(to right, rgb(236,12,28), #063672);
+  width: 100%;
+}
+#navigation {
+  background-color: #000000;
+}
+#title {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  color: #ffffff;
+  font-weight: 800;
+}
+h2,h3,h5 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+.titles {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.titles h3, .titles a {
+  color: #ffffff;
+}
+.main {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.left, .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+  padding: auto;
+  color: #9B814E;
+}
+.left a, .right a {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  transition: all 3s ease;
+  border: 0.05em solid #000000;
+  background-color: rgba(0, 51, 0, 0.15)
+}
+.left a:hover {
+  background-color: #063672;
+  border: 0.05em solid #ffffff;
+}
+.right a:hover {
+  background-color: #D80919;
+  border: 0.05em solid #ffffff;
+}
+.right a:hover i {
+  transition: transform 30s ease;
+  transform: rotate(3600deg);
+
+}
+.click {
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.left .click img {
+  padding: 1em;
+}
+.left .click img {
+  height: 15em;
+}
+.click h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-align: center;
+}
+.right .click .frame {
+  height: 100%;
+  width: 90%;
+  border: 1em solid #ffffff;
+  border-bottom: 00em solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5em;
+}
+
+.right h2{
+  text-align: center;
+  margin-bottom: 0;
+}
+.right i {
+
+  font-size: 8em;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  color: #ffffff;
+  background-color: rgba(155, 129, 78,0.7);
+  border-radius: 100%;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .main {
+    width: 94%;
+  }
+  .left, .right {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 95%;
+  }
+  .left, .right {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 95%;
+  }
+  .rulesContainer {
+    width: 90%;
+  }
+}
+
+
+
+.rules {
+  padding-top: 3em;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5em;
+}
+.rules li {
+  list-style-type: disc;
+  font-size: 1.25em;
+}
+.rules #sub li {
+  margin-left: 1em;
+  list-style-type: circle;
+}
+.rulesContainer {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9B814E;
+  padding: 3em;
+  border-radius: 5em;
+  margin-bottom: 1em;
+}
+#lastPerson {
+  color: #063672;
+  font-weight: bold;
+}

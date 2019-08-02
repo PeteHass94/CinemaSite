@@ -1,0 +1,158 @@
+/*
+white: #ffffff
+black: #000000
+RED HEX COLOR: #EC0C1C;
+DARK RED HEX COLOR: #D80919;
+BLUE HEX COLOR: #063672;
+GOLD HEX COLOR: #9B814E;
+
+font-family: 'Raleway', Helvetica, sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'PT Serif', Georgia, serif;
+font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+*/
+
+body {
+  display: inline-flex;
+  width: 100%;
+}
+.left {
+  height: 100vh;
+  width: 50%;
+  background-color: #EC0C1C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right {
+  height: 100vh;
+  width: 50%;
+  background-color: #D80919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3em;
+}
+
+/* left */
+.badge {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.badge img{
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+.podium {
+  height: 90%;
+  width: 40%;
+  background: #ffffff;
+  position: absolute;
+  top: 5%;
+  margin-bottom: 0;
+  z-index: 1;
+  border-width: thick;
+  border-radius: 20% 20% 80% 80%;
+  flex-shrink: 1;
+}
+.badge h1 {
+  z-index: 4;
+  position: relative;
+  color:  #063672;
+  padding-bottom: 0;
+  text-decoration: none;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+/* right */
+.logo {
+  height: 12em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  height: 100%;
+}
+.welcome {
+  color:  #063672;
+  margin: 3em 2em;
+}
+.welcome h1 {
+  font-size: 4em;
+  position: relative;
+  left: 25%;
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+}
+#welcometo {
+  color:  #063672;
+  position: relative;
+  left: -40%;
+}
+#initial {
+  color:  #ffffff;
+}
+.enter {
+  color: #9B814E;
+  width: 12em;
+  height: 12em;
+  margin: auto;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Images/ballOutline.png");
+  background-size: 101%;
+}
+.enter h2 {
+  margin: auto;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+a:hover .enter h2  {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #9B814E;
+}
+a:hover .enter  {
+  background-image: none;
+  background-color: #9B814E;
+  box-shadow: 0 0 15em #fff;
+}
+@media only screen and (max-width: 1300px) {
+  .logo {
+    height: 9em;
+  }
+}
+@media only screen and (max-height: 800px) {
+  .right {
+    height: 500em;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .logo {
+        height: 11em;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+      background: linear-gradient(to right, rgb(236,12,28), #063672);
+      width: 100%;
+    }
+    h1, #welcometo {
+      color: #ffffff;
+    }
+    #initial {
+      color: #9B814E;
+    }
+}

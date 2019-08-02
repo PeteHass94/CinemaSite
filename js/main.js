@@ -202,3 +202,7 @@ function printTicket(ticket)
     paymentSection = document.getElementById("payments").style.display = "none";
     window.print();
 }
+
+function sendEmail(){
+  document.getElementById("confirmation").innerHTML = "Email sent. Thank you come again.";
+}

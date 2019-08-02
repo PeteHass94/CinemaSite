@@ -1,0 +1,32 @@
+span {
+  color: #BBA461;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+.bio {
+  margin-bottom: 0.25em;
+}
+.h6 {
+  margin: auto;
+}
+.details{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.details .address {
+  margin-left: 1em;
+}
+form {
+  width: 100%;
+}
+
+.details div {
+
+}
+button {
+  margin-top: 1em;
+}

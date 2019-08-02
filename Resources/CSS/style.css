@@ -1,0 +1,277 @@
+/*
+white: #ffffff
+black: #000000
+RED HEX COLOR: #EC0C1C;
+                rgb(236,12,28);
+DARK RED HEX COLOR: #D80919;
+                    rgb(216,9,25);
+BLUE HEX COLOR: #063672;
+GOLD HEX COLOR: #9B814E;
+
+font-family: 'Raleway', Helvetica, sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'PT Serif', Georgia, serif;
+font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+*/
+
+html {
+  font-size: 16px;
+}
+button:focus {
+  outline: none;
+}
+
+
+
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-color: #ffffff;
+}
+.mediaIcon {
+  border-radius: 50%;
+  padding: 0.1em;
+  background-color: #EC0C1C;
+  width: 3em;
+  height: 3em;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mediaIcon i {
+  color: #ffffff;
+}
+.mediaIcon.facebooklink {
+  background-color: #3B5998;
+}
+.description {
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em;
+}
+.description h1, .description h2 {
+  color: #EC0C1C;
+  font-family: 'PT Serif', Georgia, serif;
+}
+.description p,
+.description li {
+  font-size: 1em;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+#motto {
+  font-family: 'Raleway Dots', cursive;
+  font-weight: 400;
+  font-size: 4em;
+}
+input[type="submit"],
+input[type="reset"]
+{
+    background: transparent;
+    border: none;
+    padding: 0.5em;
+}
+/* header and navigation */
+header {
+  height: 11em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  position: fixed;
+  transition: all 1s ease;
+}
+header img{
+  height: 90%;
+  margin-top: 1em;
+}
+#navigation {
+  position: block;
+  top: 0;
+  transition: all 1s ease;
+}
+nav {
+  height: 10em;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EC0C1C;
+  color: #ffffff;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10em;
+}
+
+nav ul li {
+  font-size: 2em;
+  height: 3em;
+  color: #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transition: all 1s ease;
+}
+nav ul li:first-child {
+  border-left: none;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  transition: background-color 1s ease;
+}
+nav ul li a i {
+  margin-right: 0.5em;
+}
+nav ul li a:hover {
+  color: #9B814E;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 1000px) {
+  #navigation ul li a i {
+    display: none;
+    margin-left: 0.5em;
+  }
+  #navigation ul a{
+    padding: 0.5em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #navigation ul li a i {
+    display: inline-block;
+  }
+  #navigation ul li a span{
+    display: none;
+  }
+}
+#navigation.shrink ul li{
+  transition: all 0.5s ease;
+  font-size: 1.5em;
+  height: 2em;
+}
+header.shrink img{
+  height: 0;
+  display: none;
+}
+nav.shrink {
+  height: 5em;
+  position: fixed;
+}
+.other {
+  height: 3em;
+  position: block;
+  background-color: #ffffff;
+  z-index: 0;
+  transition: margin-top 0.5s ease;
+  margin-top: 0;
+  cursor: pointer;
+}
+.other h2{
+  margin: auto 0.75em;
+  display: none;
+  width: 2em;
+  height: 90%;
+}
+.other i, .other h2 {
+  color: #EC0C1C;
+  font-size: 2em;
+  cursor: pointer;
+}
+.other:hover i{
+    transition: transform 30s ease;
+    transform: rotate(3600deg);
+}
+.other:hover h2{
+    display: inline-flex;
+}
+.other.shrink {
+  position: fixed;
+  top: 5em;
+  transition: top 0.5s ease;
+  top: 0;
+  z-index: -5;
+}
+.belowTitle {
+  position: relative;
+  top: 12em;
+  z-index: 0;
+}
+#bumper {
+  height: 0em;
+  width: 100%;
+}
+#bumper.shrink{
+  height: 5em;
+}
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  top: 12em;
+  background-color: #063672;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Emirates {
+  width: 50%;
+  text-align: center;
+  margin: 2em auto;
+}
+.Emirates img {
+  width: 60%;
+}
+.extras {
+  text-align: right;
+  width: 45%;
+  padding-right: 2em;
+}
+.extras a {
+  color: #ffffff;
+
+}
+.extras a h1{
+  font-size: 1.5em;
+}
+.extras a:hover {
+  color: #9B814E;
+}
+.extras i {
+  margin-right: 1em;
+}
+@media only screen and (max-width: 1400px) {
+  .extras a h1{
+    font-size: 1em;
+  }
+
+}
+#matchdayMenu:hover i {
+  transition: transform 30s ease;
+  transform: rotate(3600deg);
+}
+.other a {
+  display: none;
+    cursor: default;
+}
